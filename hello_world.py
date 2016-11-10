@@ -114,35 +114,121 @@
 # d = {'person': 2, 'spider': 8, 'cat': 4}
 # for animal, legs in d.iteritems():
 	# print 'A %s has %d legs' % (animal,legs)
+ 
+#nums = range(5)
+#even_num_to_square = {x: x**2 for x in nums if x%2==0}
+#print even_num_to_square
 
-## No va 
-# nums = range(5)
-# even_num_to_square = {x: x**2 for x in nums if x%2==0}
-# print even_num_to_square
+#animals = {'cat','dog'}
+#print 'cat' in animals
+#print 'fish' in animals
+#animals.add('fish')
+#print 'fish' in animals
+#animals.add('cat') #Does nothing
+#print len(animals)
+#animals.remove('cat')
+#print len(animals)
 
-## No va
-# animals = {'cat', 'dog'}
-# print 'cat' in animals
-# print 'fish' in animals
-# animals.add('fish')
-# print fish in animals
-# animals.add('cat') #Does nothing
-# print len(animals)
-# animals.remove('cat')
-# print len(animals)
+#animals = {'cat','dog', 'fish'}
+#for idx, animal in enumerate(animals):
+	#print '#%d: %s' % (idx+1,animal)
 
-## No va
-# animals = {'cat','dog', 'fish'}
-# for idx, animal in enumerate(animals):
-	# print '#%d: %s' % (idx+1,animal)
-	
-# from math import sqrt
-# nums = {int(sqrt(x)) for x in range(30)}
-# print nums
+#from math import sqrt
+#nums = {int(sqrt(x)) for x in range(30)}
+#print nums
+
+## Tuples 
+#d = {(x,x+1): x for x in range(10)}
+#t = (5,6)
+#print type(t)
+#print d[t]
+#print d[(1,2)]
+
+## Functions
+#def sign(x):
+    #if x > 0:
+        #return 'positive'
+    #elif x < 0:
+        #return 'negative'
+    #else:
+        #return 'zero'
+    
+#for x in [-1,0,1]:
+    #print sign(x)
+    
+    
+#def hello(name,loud=False):
+    #if loud:
+        #print 'HELLO! %s' % name.upper()
+    #else:
+        #print 'hello %s' % name
+        
+#hello('Bob')
+#hello('Fred',True)
+
+
+## Classes
+#class Greeter(object):
+
+    ## Constructor
+    #def __init__(self,name):
+        #self.name = name # Instance variable
+        
+    ## Instance method
+    #def greet(self,loud=False):
+        #if loud:
+            #print 'HELLO %s' % self.name.upper()
+        #else:
+            #print 'Hello %s' % self.name
+        
+#g = Greeter('Fred')
+#g.greet()
+#g.greet(loud=True)
+
+## NUMPY
+#import numpy as np
+#a = np.array([1,2,3])
+#print type(a)
+#print a.shape
+#print a[0],a[1],a[2]
+#a[0] = 5
+#print a
+
+#b = np.array([[1,2,3],[4,5,6]])
+#print b.shape
+#print b[0,0], b[0,1], b[1,0]
+#print b
+
+
+#import numpy as np
+#a = np.zeros((2,2))
+#print a
+
+#b = np.ones((1,2))
+#print b
+
+#c = np.full((2,2),7)
+#print c
+
+#d = np.eye(2)
+#print d
+
+#e = np.random.random((2,2))
+#print e
 
 
 
 
+
+
+#import numpy as np
+#import matplotlib.pyplot as plt
+
+#x = np.arange(0,3 * np.pi, 0.1)
+#y = np.sin(x)
+
+#plt.plot(x,y)
+#plt.show()
 
 
 
